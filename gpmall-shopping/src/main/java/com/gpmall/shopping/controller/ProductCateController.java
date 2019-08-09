@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/shopping")
 public class ProductCateController {
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IProductCateService productCateService;
 
     @Anoymous

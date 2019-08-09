@@ -24,7 +24,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 public class ClearCartItemHandler extends AbstractTransHandler {
-    @Reference
+    @Reference(check = false)
     ICartService cartService;
 
     //是否采用异步方式执行

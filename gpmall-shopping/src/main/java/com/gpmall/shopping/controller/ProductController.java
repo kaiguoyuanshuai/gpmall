@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/shopping")
 public class ProductController {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IProductService productService;
 
     @Anoymous

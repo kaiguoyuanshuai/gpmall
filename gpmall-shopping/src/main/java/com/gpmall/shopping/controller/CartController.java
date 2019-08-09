@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/shopping")
 public class CartController {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     ICartService iCartService;
 
     /**

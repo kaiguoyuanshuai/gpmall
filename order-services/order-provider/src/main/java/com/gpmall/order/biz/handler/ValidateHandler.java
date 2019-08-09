@@ -30,7 +30,7 @@ public class ValidateHandler extends AbstractTransHandler {
     @Autowired
     OrderMapper orderMapper;
 
-    @Reference
+    @Reference(check = false)
     IMemberService memberService;
 
     @Override

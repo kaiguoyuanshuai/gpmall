@@ -35,10 +35,10 @@ import java.util.Map;
 @RequestMapping("/user")
 public class LoginController {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IUserLoginService iUserLoginService;
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IKaptchaService kaptchaService;
 
     /**

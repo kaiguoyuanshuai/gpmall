@@ -23,10 +23,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/shopping")
 public class HomeController {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IContentService contentService;
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IHomeService iHomeService;
 
     @Anoymous

@@ -24,7 +24,7 @@ import java.lang.reflect.Method;
  */
 public class TokenIntercepter extends HandlerInterceptorAdapter {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IUserLoginService iUserLoginService;
 
     public static String ACCESS_TOKEN="access_token";

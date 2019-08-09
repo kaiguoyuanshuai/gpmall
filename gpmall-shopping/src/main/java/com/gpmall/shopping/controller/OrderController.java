@@ -33,10 +33,10 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/shopping")
 public class OrderController {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     OrderCoreService orderCoreService;
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     OrderQueryService orderQueryService;
     /*@Reference
     OrderQueryService orderQueryService;*/

@@ -21,6 +21,7 @@ spring:
     useGlobalDataSourceStat: true
   redisson:
       address: redis.gpmall.com:6379
+      password: asdf1234
       timeout: 3000
       database: 0
       pool:

@@ -1,7 +1,7 @@
 package com.gupaoedu.pay.dto;
 
 import com.gpmall.commons.result.AbstractRequest;
-import com.gpmall.pay.biz.payment.validator.validatorextend.PayChannel;
+//import com.gpmall.pay.biz.payment.validator.validatorextend.PayChannel;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -55,7 +55,7 @@ public class PaymentRequest extends AbstractRequest{
     /**
      * 支付渠道（alipay：支付宝  /  wechat_pay：微信）
      */
-    @PayChannel
+    //@PayChannel
     private String payChannel;
 
     @Override

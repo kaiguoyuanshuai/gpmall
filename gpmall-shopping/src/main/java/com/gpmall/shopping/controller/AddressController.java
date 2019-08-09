@@ -30,7 +30,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/shopping")
 public class AddressController {
 
-    @Reference(timeout = 3000)
+    @Reference(check=false,timeout = 3000)
     IAddressService addressService;
 
     /**
