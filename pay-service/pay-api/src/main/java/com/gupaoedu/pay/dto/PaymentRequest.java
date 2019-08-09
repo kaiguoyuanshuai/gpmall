@@ -8,6 +8,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+
 /**
  * 腾讯课堂搜索 咕泡学院
  * 加群获取视频：608583947
@@ -19,7 +20,7 @@ public class PaymentRequest extends AbstractRequest{
      * 用户id
      */
     @NotNull(message = "userId不可为空")
-    private Integer userId;
+    private Long userId;
 
     /**
      * 交易订单号, 统一生成全局唯一的订单号
